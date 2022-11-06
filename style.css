@@ -1,0 +1,80 @@
+/* 定义全局色板 */
+:root {
+    --primary-color: black;
+    --text-color-my: pink;
+}
+
+body{
+    /*background: #fff3f5;*/
+    background: linear-gradient(to right,#fff3f5,#a2bee9a3);
+    font-family: 'MaShanZheng';
+    font-size: 26px;
+}
+/* 容器为栅格布局 */
+.container{
+    display: grid;
+    box-shadow: 0px 10px 20px 5px pink;
+    width: 600px;
+    margin: 100px auto;
+    padding: 0px 1px;
+    background: white;
+}
+.container>div{
+    margin-left: 50px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+}
+footer ul li {
+    list-style: none;
+    margin: auto;
+}
+footer .fab{
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+/* 鼠标悬停,字体颜色变化 */
+h1:hover{
+    color: pink;
+    transition: 0.5s;
+}
+h2:hover{
+    color: pink;
+    transition: 0.5s;
+}
+div p:hover{
+    transition: 0.5s;
+    color: var(--text-color-my);
+}
+
+
+.container .info .info-img{
+    margin-left: 220px;
+}
+
+
+/*字体引入*/
+
+
+
+@font-face {
+  font-family: 'MaShanZheng';
+  font-display: swap;
+  src: url('./font/MaShanZheng-Regular.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'ZhiMangXing';
+  font-display: swap;
+  src: url('./font/ZhiMangXing-Regular.ttf') format("truetype");
+}
+
+h2{
+    font-size: 28px;
+}
